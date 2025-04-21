@@ -1,0 +1,326 @@
+:root {
+    --col-1: 8.3333333333%;
+    --col-2: 16.6666666667%;
+    --col-3: 25%;
+    --col-4: 33.3333333333%;
+    --col-5: 41.6666666667%;
+    --col-6: 50%;
+    --col-7: 58.3333333333%;
+    --col-8: 66.6666666667%;
+    --col-9: 75%;
+    --col-10: 83.3333333333%;
+    --col-11: 91.6666666667%;
+    --col-12: 100%;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    scroll-behavior: smooth; /* This makes it more visually appealing when scrolling on a webpage */
+    font-size: 16px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility; /* This makes texts more pretty, at the cost of less performance / speed */
+}
+
+/* container */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media (min-width: 576px) { .container {max-width: 540px;} }
+@media (min-width: 768px) { .container {max-width: 720px;} }
+@media (min-width: 992px) { .container {max-width: 960px;} }
+@media (min-width: 1200px) { .container {max-width: 1140px;} }
+@media (min-width: 1400px) { .container {max-width: 1240px;} }
+
+/* height */
+.height {height: 100%;}
+
+/* column width */
+.col-1 {width: 8.3333333333%;}
+.col-2 {width: 16.6666666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.3333333333%;}
+.col-5 {width: 41.6666666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.3333333333%;}
+.col-8 {width: 66.6666666667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.3333333333%;}
+.col-11 {width: 91.6666666667%;}
+.col-12 {width: 100%;}
+
+/* These column sizes do work a bit different than the ones in bootstrap but in reality these work a bit better */
+@media (max-width: 1399.98px) {
+    .col-xxl-1 {width: 8.3333333333%;}
+    .col-xxl-2 {width: 16.6666666667%;}
+    .col-xxl-3 {width: 25%;}
+    .col-xxl-4 {width: 33.3333333333%;}
+    .col-xxl-5 {width: 41.6666666667%;}
+    .col-xxl-6 {width: 50%;}
+    .col-xxl-7 {width: 58.3333333333%;}
+    .col-xxl-8 {width: 66.6666666667%;}
+    .col-xxl-9 {width: 75%;}
+    .col-xxl-10 {width: 83.3333333333%;}
+    .col-xxl-11 {width: 91.6666666667%;}
+    .col-xxl-12 {width: 100%;}
+}
+
+@media (max-width: 1199.98px) {
+    .col-xl-1 {width: 8.3333333333%;}
+    .col-xl-2 {width: 16.6666666667%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.3333333333%;}
+    .col-xl-5 {width: 41.6666666667%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.3333333333%;}
+    .col-xl-8 {width: 66.6666666667%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.3333333333%;}
+    .col-xl-11 {width: 91.6666666667%;}
+    .col-xl-12 {width: 100%;}
+}
+
+@media (max-width: 991.98px) {
+    .col-l-1 {width: 8.3333333333%;}
+    .col-l-2 {width: 16.6666666667%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.3333333333%;}
+    .col-l-5 {width: 41.6666666667%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.3333333333%;}
+    .col-l-8 {width: 66.6666666667%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.3333333333%;}
+    .col-l-11 {width: 91.6666666667%;}
+    .col-l-12 {width: 100%;}
+}
+
+@media (max-width: 767.98px) {
+    .col-m-1 {width: 8.3333333333%;}
+    .col-m-2 {width: 16.6666666667%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.3333333333%;}
+    .col-m-5 {width: 41.6666666667%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.3333333333%;}
+    .col-m-8 {width: 66.6666666667%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.3333333333%;}
+    .col-m-11 {width: 91.6666666667%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media (max-width: 575.98px) {
+    .col-s-1 {width: 8.3333333333%;}
+    .col-s-2 {width: 16.6666666667%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.3333333333%;}
+    .col-s-5 {width: 41.6666666667%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.3333333333%;}
+    .col-s-8 {width: 66.6666666667%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.3333333333%;}
+    .col-s-11 {width: 91.6666666667%;}
+    .col-s-12 {width: 100%;}
+}
+
+/* padding top */
+.pt-0 {padding-top: 0;}
+.pt-1 {padding-top: 4px;}
+.pt-2 {padding-top: 8px;}
+.pt-3 {padding-top: 16px;}
+.pt-4 {padding-top: 24px;}
+.pt-5 {padding-top: 48px;}
+.pt-6 {padding-top: 64px;}
+
+/* padding bottom */
+.pb-0 {padding-bottom: 0;}
+.pb-1 {padding-bottom: 4px;}
+.pb-2 {padding-bottom: 8px;}
+.pb-3 {padding-bottom: 16px;}
+.pb-4 {padding-bottom: 24px;}
+.pb-5 {padding-bottom: 48px;}
+.pb-6 {padding-bottom: 64px;}
+
+/* margin top */
+.mt-0 {margin-top: 0;}
+.mt-1 {margin-top: 4px;}
+.mt-2 {margin-top: 8px;}
+.mt-3 {margin-top: 16px;}
+.mt-4 {margin-top: 24px;}
+.mt-5 {margin-top: 48px;}
+.mt-6 {margin-top: 64px;}
+
+/* margin bottom */
+.mb-0 {margin-bottom: 0;}
+.mb-1 {margin-bottom: 4px;}
+.mb-2 {margin-bottom: 8px;}
+.mb-3 {margin-bottom: 16px;}
+.mb-4 {margin-bottom: 24px;}
+.mb-5 {margin-bottom: 48px;}
+.mb-6 {margin-bottom: 64px;}
+
+/* margin left and margin right */
+.mx-auto {margin-left: auto; margin-right: auto;}
+.ml-auto {margin-left: auto;}
+.mr-auto {margin-right: auto;}
+
+.mx-0 {margin-right: 0; margin-left: 0;}
+.mx-1 {margin-right: 4px; margin-left: 4px;}
+.mx-2 {margin-right: 8px; margin-left: 8px;}
+.mx-3 {margin-right: 16px; margin-left: 16px;}
+.mx-4 {margin-right: 24px; margin-left: 24px;}
+.mx-5 {margin-right: 48px; margin-left: 48px;}
+.mx-6 {margin-right: 64px; margin-left: 64px;}
+
+/* margin top and margin bottom */
+.my-auto {margin-top: auto; margin-bottom: auto;}
+.my-0 {margin-top: 0; margin-bottom: 0;}
+.my-1 {margin-top: 4px; margin-bottom: 4px;}
+.my-2 {margin-top: 8px; margin-bottom: 8px;}
+.my-3 {margin-top: 16px; margin-bottom: 16px;}
+.my-4 {margin-top: 24px; margin-bottom: 24px;}
+.my-5 {margin-top: 48px; margin-bottom: 48px;}
+.my-6 {margin-top: 64px; margin-bottom: 64px;}
+
+/* padding left and padding right */
+.px-0 {padding-right: 0; padding-left: 0;}
+.px-1 {padding-right: 4px; padding-left: 4px;}
+.px-2 {padding-right: 8px; padding-left: 8px;}
+.px-3 {padding-right: 16px; padding-left: 16px;}
+.px-4 {padding-right: 24px; padding-left: 24px;}
+.px-5 {padding-right: 48px; padding-left: 48px;}
+.px-6 {padding-right: 64px; padding-left: 64px;}
+
+/* padding top and padding bottom */
+.py-0 {padding-top: 0; padding-bottom: 0;}
+.py-1 {padding-top: 4px; padding-bottom: 4px;}
+.py-2 {padding-top: 8px; padding-bottom: 8px;}
+.py-3 {padding-top: 16px; padding-bottom: 16px;}
+.py-4 {padding-top: 24px; padding-bottom: 24px;}
+.py-5 {padding-top: 48px; padding-bottom: 48px;}
+.py-6 {padding-top: 64px; padding-bottom: 64px;}
+
+/* display */
+.d-none {display: none;}
+.d-inline {display: inline;}
+.d-inline-flex {display: inline-flex;}
+.d-inline-block {display: inline-block;}
+.d-block {display: block;}
+.d-flex {display: flex;}
+
+/* flex direction */
+.flex-row {flex-direction: row;}
+.flex-column {flex-direction: column;}
+.flex-row-reverse {flex-direction: row-reverse;}
+.flex-column-reverse {flex-direction: column-reverse;}
+
+/* flex wrap */
+.flex-nowrap {flex-wrap: nowrap;}
+.flex-wrap {flex-wrap: wrap;}
+
+/* flex grow */
+.flex-grow {flex-grow: 1;}
+
+/* justify content */
+.justify-content-start {justify-content: flex-start;}
+.justify-content-end {justify-content: flex-end;}
+.justify-content-center {justify-content: center;}
+.justify-content-between {justify-content: space-between;}
+.justify-content-around {justify-content: space-around;}
+.justify-content-evenly {justify-content: space-evenly;}
+
+/* text align */
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+
+/* align items */
+.align-center {align-items: center;}
+.align-left {align-items: flex-start;}
+.align-right {align-items: flex-end;}
+
+/* Box sizing rules */
+*, *::before, *::after {box-sizing: border-box;}
+
+/* Remove default padding and list-styles */
+ul, ol {
+    padding: 0;
+    list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1, h2, h3, h4, p,
+ul, ol, li,
+figure, figcaption, blockquote,
+dl, dd {
+    margin: 0;
+}
+
+/* position */
+.pos-absolute {position: absolute;}
+.pos-relative {position: relative;}
+
+/* Make images easier to work with, it would be understandable to overwrite this */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+        scroll-behavior: auto;
+    }
+}
+
+/* transform text */
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+    font: inherit;
+}
+
+a {text-decoration: none;}
+
+/* <a> elements that don't have a class get default styles,
+ * this makes a elements more readable if underlined. */
+a:not([class]) {text-decoration-skip-ink: auto;}
+
+.uppercase {text-transform: uppercase;}
+
+/* font weight */
+.fw-1 {font-weight: 100;}
+.fw-2 {font-weight: 200;}
+.fw-3 {font-weight: 300;}
+.fw-4 {font-weight: 400;}
+.fw-5 {font-weight: 500;}
+.fw-6 {font-weight: 600;}
+.fw-7 {font-weight: 700;}
+.fw-8 {font-weight: 800;}
+.fw-9 {font-weight: 900;}
+
+strong {font-weight: 700;} /* This has to be set because it is different across browsers */
+
+/* TODO: this needs perfection, but cannot be perfected right now because we need to see it in use first. */
+.fs-1 {font-size: calc(22px + 1.5vw);}
+.fs-2 {font-size: calc(22px + 0.9vw);}
+.fs-3 {font-size: calc(21px + 0.6vw);}
+.fs-4 {font-size: calc(21px + 0.3vw);}
+.fs-5 {font-size: 20px;}
+.fs-6 {font-size: 16px;}
+.fs-7 {font-size: 14px;}
+
+p {
+    font-family: inherit;
+    font-weight: 500; /* you can overwrite these if you want */
+}
